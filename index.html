@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cart</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom style -->
+     <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Product Cart -->
+    <div class="min-h-screen flex flex-col items-center bg-[#f4f4f4] py-12">
+        <div class="w-[90%] md:w-[80%] pb-10 mx-auto">
+            <h2 class="text-5xl md:text-6xl text-[#192434] pb-4 font-bold"><span style="-webkit-text-stroke: 1.3px #192434; color: transparent;">WEEKLY</span> TOP</h2>
+            <p class="text-xl text-[#192434]">Our top selection showcases the freashest additions to our collection, </br> bringing you cutting-edge products and exciting inovations.</p>
+        </div>
+        <div class="w-[90%] md:w-[80%] mx-auto flex flex-col lg:flex-row gap-20 items-center bg-[#fdfdfd] px-6 md:px-12 py-8 md:py-16 border border-[#dfe1e6] rounded-xl">
+            <div class="w-full lg:w-1/2">
+                <img src="https://i.ibb.co.com/vxGZs8N/product-image.png" alt="">
+            </div>
+            <div class="w-full lg:w-1/2">
+                <div>
+                    <span class="text-[#606c7b] text-xl">New</span>
+                    <h3 class="text-3xl md:text-4xl font-semibold mt-2 text-[#192434]">Copper Brown Genuine Leather Wallet</h3>
+                    <div class="flex gap-2 mt-6">
+                        <span class="text-[#606c7b] text-3xl font-semibold">$200</span>
+                        <span class="text-[#88929f] text-xl mt-2"><del>$220</del></span>
+                    </div>
+                    <h4 class="text-[#b3bac5] text-lg mt-2 mb-6">Tax Included.</h4>
+                </div>
+                <div class="text-[#192434] mb-10">
+                    <h6 class="text-xl font-semibold mb-2">Description</h6>
+                    <p class="text-lg">Brown embossed genuine leather wallet with multiple chambers for cash and cards. Features card holder.</p>
+                    <p class="mt-4 mb-2">Color: Brown</p>
+                    <div class="flex justify-center items-center w-[30px] h-[30px] border border-[#606c7b] rounded">
+                        <div class="w-[24px] h-[24px] bg-[#fe813e] rounded"></div>
+                    </div>
+                </div>
+                <div>
+                    <div class="flex gap-3 lg:gap-6">
+                        <div class="flex items-center gap-2 md:gap-6 font-semibold px-5 md:px-8 md:py-2 border-2 border-[#606c7b] rounded-full">
+                            <span class="text-3xl cursor-pointer" id="decrement">-</span>
+                            <span class="text-xl" id="quantity">1</span>
+                            <span class="text-xl cursor-pointer" id="increment">+</span>
+                        </div>
+                        <button class="px-8 md:px-16 font-bold border-2 border-[#606c7b] rounded-full hover:bg-[#192434] hover:text-white text-[#192434]">ADD TO BAG</button>
+                    </div>
+                    <button class="bg-[#192434] text-white w-full md:w-[406px] py-4 mt-3 md:mt-5 rounded-full font-semibold border-2 border-[#192434] hover:bg-white hover:text-[#192434]">BUY IT NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- connection script file -->
+    <script src="./index.js"></script>
+</body>
+
+</html>
